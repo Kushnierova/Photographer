@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Price</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Kateryna Kushnierova | Фотограф</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
-      <img src="./logo.png" alt="logo" width="40" height="40" />
-      <h2>Kateryna Kushnierova</h2>
-      <img src="./portret.jpg" 
-      width="200"
+      <div class="contain-logo">
+        <div class="logo">
+          <img src="/logo.png" alt="Логотип" width="60" />
+        </div>
+        <h1>Kateryna Kushnierova</h1>
+      </div>
+    </header>
+
+    <!-- Привітання -->
+    <section class="about">
+      <img
+        src="/portret.jpg"
+        alt="Фото Катерини"
+        class="profile-photo"
+        width="100"
       />
       <p>
         Привіт! Я Катерина, і я рада вітати вас у світі фотографії, де кожен
@@ -27,29 +39,95 @@
         вашого життя. Давайте разом створимо фотографії, які ви будете зберігати
         з теплом і любов’ю.
       </p>
-    </header>
+    </section>
 
-    <main class="main">
-      <div>
-        <h2>ціни на мої послуги</h2>
-        <ul>
-          <li>
-            <h2>Фотозйомка в студії</h2>
-            <p>300zl (140zl коштує студія, 160zl за мою роботу)</p>
-          </li>
-          <li>
-            <h2>Сімейна зйомка у вас вдома</h2>
-            <p>150zl</p>
-          </li>
-          <li>
-            <h2>Фото захід</h2>
-            <p>100zl за першу годину + 50zl за кожну наступну годину</p>
-          </li>
-          <li></li>
-        </ul>
-      </div>
-    </main>
+    <!-- Види фотосесій -->
+    <section class="sessions">
+      <h2>Види фотосесій</h2>
+      <ul class="sessions-container">
+        <!-- Віконце 1 -->
+        <li class="session-box">
+          <h3>Фотосесія в студії</h3>
+          <p>Тривалість: 1 година</p>
+          <p>Результат: 15 відретушованих фото</p>
+          <p class="price">Ціна: 2000 грн</p>
+          <button class="more-info">Дізнатись більше</button>
+          <div class="session-details hidden">
+            <p>
+              Ця фотосесія включає професійне освітлення та індивідуальний
+              підхід до кожного клієнта.
+            </p>
+            <div class="portfolio-slider">
+              <img src="photo1.jpg" alt="Фото" />
+              <img src="photo2.jpg" alt="Фото" />
+              <img src="photo3.jpg" alt="Фото" />
+            </div>
+          </div>
+        </li>
+        <li class="session-box">
+          <h3>Фотосесія в студії</h3>
+          <p>Тривалість: 1 година</p>
+          <p>Результат: 15 відретушованих фото</p>
+          <p class="price">Ціна: 2000 грн</p>
+          <button class="more-info">Дізнатись більше</button>
+          <div class="session-details hidden">
+            <p>
+              Ця фотосесія включає професійне освітлення та індивідуальний
+              підхід до кожного клієнта.
+            </p>
+            <div class="portfolio-slider">
+              <img src="photo1.jpg" alt="Фото" />
+              <img src="photo2.jpg" alt="Фото" />
+              <img src="photo3.jpg" alt="Фото" />
+            </div>
+          </div>
+        </li>
+        <li class="session-box">
+          <h3>Фотосесія в студії</h3>
+          <p>Тривалість: 1 година</p>
+          <p>Результат: 15 відретушованих фото</p>
+          <p class="price">Ціна: 2000 грн</p>
+          <button class="more-info">Дізнатись більше</button>
+          <div class="session-details hidden">
+            <p>
+              Ця фотосесія включає професійне освітлення та індивідуальний
+              підхід до кожного клієнта.
+            </p>
+            <div class="portfolio-slider">
+              <img src="photo1.jpg" alt="Фото" />
+              <img src="photo2.jpg" alt="Фото" />
+              <img src="photo3.jpg" alt="Фото" />
+            </div>
+          </div>
+        </li>
+        <li class="session-box">
+          <h3>Фотосесія в студії</h3>
+          <p>Тривалість: 1 година</p>
+          <p>Результат: 15 відретушованих фото</p>
+          <p class="price">Ціна: 2000 грн</p>
+          <button class="more-info">Дізнатись більше</button>
+          <div class="session-details hidden">
+            <p>
+              Ця фотосесія включає професійне освітлення та індивідуальний
+              підхід до кожного клієнта.
+            </p>
+            <div class="portfolio-slider">
+              <img src="photo1.jpg" alt="Фото" />
+              <img src="photo2.jpg" alt="Фото" />
+              <img src="photo3.jpg" alt="Фото" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <footer></footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Слідкуйте за мною:</p>
+      <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> |
+      <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    </footer>
+
+    <script src="/scripts.js"></script>
   </body>
 </html>
