@@ -11,13 +11,9 @@ li {
 }
 
 .header {
-  background-image: url(./img/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #e4bba1;
   text-align: center;
   padding: 20px;
-  background-color: #f4f4f4;
 }
 
 .header h1 {
@@ -26,9 +22,8 @@ li {
 
 .about {
   background-image: url(./img/background-hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: 600px 600px;
+  background-repeat: repeat;
   display: flex;
   justify-content: center; /* Відцентровано по горизонталі */
   align-items: center; /* Відцентровано по вертикалі */
@@ -53,9 +48,8 @@ li {
   height: 500px;
   padding: 20px;
   background-image: url(./img/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: 600px 600px;
+  background-repeat: repeat;
 }
 
 .sessions-container {
@@ -107,8 +101,8 @@ li {
 .footer {
   text-align: center;
   padding: 10px;
-  background-color: #333;
-  color: white;
+  background-color: #f1e1cf;
+  color: #8d664e;
 }
 
 .footer a {
