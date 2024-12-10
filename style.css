@@ -26,8 +26,8 @@ li {
   background-size: 600px 600px;
   background-repeat: repeat;
   display: flex;
-  justify-content: center; /* Відцентровано по горизонталі */
-  align-items: center; /* Відцентровано по вертикалі */
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   text-align: left;
   padding: 20px;
@@ -39,6 +39,7 @@ li {
   height: auto;
   border-radius: 10px;
 }
+
 .hello-text {
   width: 700px;
   font-size: 16px;
@@ -108,12 +109,14 @@ li {
   color: #ff9800;
   text-decoration: none;
 }
+
 .contain-logo {
   display: flex;
   gap: 10px;
   justify-content: left;
   align-items: center;
 }
+
 /* МОДАЛЬНЕ ВІКОНЕЧКО */
 .modal {
   position: fixed;
@@ -158,6 +161,7 @@ li {
 body.modal-open {
   overflow: hidden;
 }
+
 .slider {
   position: relative;
   width: 100%;
@@ -210,4 +214,97 @@ body.modal-open {
 .prev-slide:hover,
 .next-slide:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Адаптивні стилі */
+
+/* Для мобільних пристроїв */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .about img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .hello-text {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .sessions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .session-box {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .contain-logo {
+    justify-content: center;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+}
+
+/* Для планшетів */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .about img {
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .hello-text {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .sessions-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .session-box {
+    width: 45%;
+    height: auto;
+  }
+}
+
+/* Для десктопів */
+@media (min-width: 1025px) {
+  .about {
+    flex-direction: row;
+    text-align: left;
+    height: 300px;
+  }
+
+  .sessions-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .session-box {
+    width: 200px;
+    height: 400px;
+  }
 }
