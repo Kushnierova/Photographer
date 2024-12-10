@@ -1,39 +1,46 @@
-    // Дістаємо елементи
-    const modal = document.getElementById('modal');
-    const openModalBtn = document.querySelector('.more-info');
-    const closeModalBtn = document.getElementById('modalClose');
+// Знаходимо всі кнопки "Дізнатись більше"
+const moreInfoButtons = document.querySelectorAll(".more-info");
 
-    // Функція відкриття модального вікна
-    function openModal() {
-      modal.classList.add('active');
-      document.body.classList.add('modal-open');
+// Додаємо події для кожної кнопки
+moreInfoButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modalId = button.getAttribute("data-modal"); // Отримуємо ID модального вікна
+    const modal = document.getElementById(modalId); // Знаходимо відповідне модальне вікно
+    modal.classList.add("active");
+    document.body.classList.add("modal-open");
+  });
+});
+
+// Закриття модальних вікон
+const closeButtons = document.querySelectorAll(".modal-close");
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener("click", () => {
+    const modal = closeButton.closest(".modal"); // Знаходимо батьківське модальне вікно
+    modal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  });
+});
+
+// Закриття при кліку поза модальним вікном
+const modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+      document.body.classList.remove("modal-open");
     }
+  });
+});
 
-    // Функція закриття модального вікна
-    function closeModal() {
-      modal.classList.remove('active');
-      document.body.classList.remove('modal-open');
-    }
-
-    // Відкриття модального вікна при натисканні кнопки
-    openModalBtn.addEventListener('click', openModal);
-
-    // Закриття модального вікна при натисканні кнопки Х
-    closeModalBtn.addEventListener('click', closeModal);
-
-    // Закриття модального вікна при натисканні поза вікном
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
+// Закриття при натисканні ESC
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    modals.forEach((modal) => {
+      modal.classList.remove("active");
     });
-
-    // Закриття модального вікна при натисканні клавіші ESC
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        closeModal();
-      }
-    });
+    document.body.classList.remove("modal-open");
+  }
+});
     // СЛАЙДЕР В МОДАЛЬНОМУ ВІКОНЦІ
     document.addEventListener("DOMContentLoaded", function () {
         const slides = document.querySelector(".slides");
