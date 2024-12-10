@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 li {
   list-style: none;
   padding: 0;
@@ -41,7 +42,6 @@ li {
 .hello-text {
   width: 700px;
   font-size: 16px;
-
 }
 
 .sessions {
@@ -78,7 +78,6 @@ li {
   font-weight: bold;
   margin: 10px 0;
 }
-
 
 .more-info {
   background-color: #e4bba1;
