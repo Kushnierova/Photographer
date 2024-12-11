@@ -164,6 +164,7 @@ li {
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: #412d21;
+  margin: 20px;
 }
 
 .modal-close {
