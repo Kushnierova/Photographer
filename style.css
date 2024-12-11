@@ -243,7 +243,7 @@ body.modal-open {
 /* Адаптивні стилі */
 
 /* Для мобільних пристроїв */
-@media (max-width: 768px) {
+@media screen and (min-width: 0px){
   .about {
     flex-direction: column;
     text-align: center;
@@ -257,7 +257,7 @@ body.modal-open {
 
   .hello-text {
     width: 90%;
-    font-size: 14px;
+    font-size: 10px;
   }
   .sessions {
     height: 100%;
@@ -300,7 +300,7 @@ body.modal-open {
 }
 
 /* Для планшетів */
-@media (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .about {
     flex-direction: row;
     text-align: center;
@@ -329,18 +329,18 @@ body.modal-open {
     height: auto;
   }
   .slider {
-    max-width: 400px;
+    max-width: 300px;
   }
   .modal-content {
-    max-width: 500px;
+    max-width: 600px;
   }
   .modal-ul li {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
 /* Для десктопів */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .about {
     flex-direction: row;
     text-align: left;
