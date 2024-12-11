@@ -356,10 +356,10 @@ body.modal-open {
     height: 400px;
   }
   .slider {
-    max-width: 400px;
+    max-width: 300px;
   }
   .modal-content {
-    max-width: 900px;
+    max-width: 1000px;
   }
   .modal-ul li {
     font-size: 16px;
